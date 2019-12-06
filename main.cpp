@@ -6,7 +6,8 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    QSettings settings;
+   
+    QSettings setting("MyCompany","MyApp");
     settings.setValue("key", 123);
 
     settings.beginGroup("test");
